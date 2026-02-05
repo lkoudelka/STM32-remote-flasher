@@ -1,0 +1,39 @@
+{
+    "servers": {
+        "pi1": {
+            "hostnames": [
+                "192.168.0.21"
+            ],
+            "user": "pi",
+            "key": "~/.ssh/id_rsa",
+            "stm32cli": "/usr/bin/STM32_Programmer_CLI",
+            "hub_cli": "/home/pi/stm_hub/hub_cli.py",
+            "workdir": "/home/pi/stm_work",
+            "max_parallel": 4,
+            "power_control": true,
+            "_resolved": "192.168.0.21"
+        }
+    },
+    "devices": {
+        "g0": {
+            "serial": "066DFF515754888367131638",
+            "server": "pi1",
+            "hub_port": "USB2",
+            "default_interface": "SWD",
+            "signals": {
+                "boot": false,
+                "nrst": false
+            }
+        },
+        "dfu1": {
+            "serial": "208230913036",
+            "server": "pi1",
+            "hub_port": "USB3",
+            "default_interface": "USB",
+            "signals": {
+                "boot": false,
+                "nrst": false
+            }
+        }
+    }
+}
