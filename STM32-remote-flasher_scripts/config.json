@@ -12,6 +12,12 @@
             "max_parallel": 4,
             "power_control": true,
             "_resolved": "192.168.0.21"
+
+              "hubd": {
+                "enabled": true,
+                "bind_host": "127.0.0.1",
+                "port": 9999
+              }
         }
     },
     "devices": {
